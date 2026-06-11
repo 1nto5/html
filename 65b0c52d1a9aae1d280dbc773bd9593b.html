@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaszyfrowany artefakt</title>
+<style>
+  html,body{margin:0;height:100%;font:16px/1.5 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:#0b0b0c;color:#e7e7e9}
+  #msg{display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
+  #msg>div{max-width:34rem}
+  code{background:#1c1c1f;padding:.1em .35em;border-radius:4px}
+</style>
+</head>
+<body>
+<div id="msg"><div>Odszyfrowuję…</div></div>
+<script id="payload" type="application/json">
+{"iv":"a56be11f350c14f0a86888ff2be4fda7","ct":"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"}</script>
+<script>
+(function(){
+  var msg=document.getElementById('msg');
+  function fail(t){ msg.innerHTML='<div>'+t+'</div>'; }
+  function hexToBytes(h){ var a=new Uint8Array(h.length/2); for(var i=0;i<a.length;i++){ a[i]=parseInt(h.substr(i*2,2),16); } return a; }
+  function b64ToBytes(b){ var s=atob(b), a=new Uint8Array(s.length); for(var i=0;i<s.length;i++){ a[i]=s.charCodeAt(i); } return a; }
+  var keyHex=(location.hash||'').replace(/^#/,'').trim();
+  if(!/^[0-9a-fA-F]{64}$/.test(keyHex)){ fail('Brak prawidłowego klucza w linku. Otwórz pełny link — z częścią po <code>#</code>.'); return; }
+  if(!window.crypto||!crypto.subtle){ fail('Ta przeglądarka nie wspiera Web Crypto.'); return; }
+  var p; try{ p=JSON.parse(document.getElementById('payload').textContent); }catch(e){ fail('Uszkodzony ładunek.'); return; }
+  crypto.subtle.importKey('raw',hexToBytes(keyHex),{name:'AES-CBC'},false,['decrypt'])
+    .then(function(k){ return crypto.subtle.decrypt({name:'AES-CBC',iv:hexToBytes(p.iv)},k,b64ToBytes(p.ct)); })
+    .then(function(buf){
+      var text=new TextDecoder().decode(new Uint8Array(buf)), SENT='HTMLENCv1\n';
+      if(text.indexOf(SENT)!==0){ fail('Nieprawidłowy klucz — nie udało się odszyfrować.'); return; }
+      text=text.slice(SENT.length);
+      // Render w iframe srcdoc: deterministycznie podmienia widok (bez śladu
+      // komunikatu) i izoluje dokument artefaktu z pełną interaktywnością.
+      var f=document.createElement('iframe');
+      f.setAttribute('title','artefakt');
+      f.style.cssText='position:fixed;inset:0;width:100%;height:100%;border:0;margin:0;background:#fff';
+      f.srcdoc=text;
+      document.body.innerHTML=''; document.body.style.margin='0';
+      document.body.appendChild(f);
+    })
+    .catch(function(){ fail('Nieprawidłowy klucz — nie udało się odszyfrować.'); });
+})();
+</script>
+</body>
+</html>
